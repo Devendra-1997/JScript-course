@@ -178,3 +178,60 @@
 //   grade = "F";
 // }
 // console.log("According to your scores, you have got", grade);
+
+// loops in js
+
+// loops are used to execute a piece of code again and again.loops are used to calculate the logic.
+
+// for loop
+
+// for (intialization, stopping condition, updatation)
+// for (let i = 1; i <= 5; i++) {
+//   console.log("loops in js");
+// }
+
+// for example:
+
+// calculate the sum of 1 to 5
+
+// let sum = 0;
+// let n = 100;
+// for (let i = 1; i <= n; i++) {
+//   sum = sum + i;
+// }
+// console.log("sum = ", sum);
+// console.log("loop can not continue further");
+
+// print 1 to 5
+
+// for (let i = 1; i <= 5, i++; ) {
+//   console.log("i = ", i);
+// }
+
+// while loop
+
+// let i = 1;
+// while (i <= 10) {
+//   console.log("loops in js");
+//   i++;
+// }
+
+// do-while loop
+
+// let i = 1;
+// do {
+//   console.log("i=", i);
+//   i++;
+// } while (i <= 5);
+
+// challange questions
+
+// create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
+
+let gameNum = 20;
+let userNum = prompt("Enter the game number. Guess your number ");
+
+while (userNum != gameNum) {
+  userNum = prompt("you enetered the wrong the number.Please try again ");
+}
+console.log("Congrats, you guessed the right number");
