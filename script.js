@@ -228,10 +228,17 @@
 
 // create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
 
-let gameNum = 20;
-let userNum = prompt("Enter the game number. Guess your number ");
+// let gameNum = 20;
+// let userNum = prompt("Enter the game number. Guess your number ");
 
-while (userNum != gameNum) {
-  userNum = prompt("you enetered the wrong the number.Please try again ");
-}
-console.log("Congrats, you guessed the right number");
+// while (userNum != gameNum) {
+//   userNum = prompt("you entered the wrong the number.Please try again ");
+// }
+// console.log("Congrats, you guessed the right number");
+
+// next topic : String in Js
+
+let fullName = prompt("Enter your full name");
+
+let username = "@" + fullName + fullName.length;
+console.log(username);
