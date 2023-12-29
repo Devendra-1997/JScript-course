@@ -238,7 +238,59 @@
 
 // next topic : String in Js
 
-let fullName = prompt("Enter your full name");
+// practice questions
+// prompt the user to enter their full name. Generate a username for them baased on the input. start username with @, followed by their full name and ending with fullname length.
 
-let username = "@" + fullName + fullName.length;
-console.log(username);
+// let fullName = prompt("Enter your full name");
+
+// let username = "@" + fullName + fullName.length;
+// console.log(username);
+
+// create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
+
+// let gameNum = 20;
+// let userNum = prompt("Enter your game number");
+
+// while (gameNum != userNum) {
+//   userNum = prompt("You entered wrong number. try again");
+// }
+// console.log("congratulations you entered right number. ");
+
+// Arrays in js
+// collection of items
+
+// let marks = [32, 56, 67, 89];
+// console.log(marks);
+// console.log(marks.length); // length is a property.
+// console.log(marks[0]);
+
+// looping over an array
+// print all elements of an array
+
+// Practice Questions
+// For a given array with marks of students, [85, 97, 44, 37, 76, 60].Find the average marks of the entire class.
+
+let marks = [85, 97, 44, 37, 76, 60];
+console.log(marks);
+
+let sum = 0;
+for (let val of marks) {
+  sum += val;
+}
+console.log(sum);
+
+let avg = sum / marks.length;
+
+console.log(`the average marks of the class is ${avg}`);
+
+// next question
+
+// For  a given array with prices of 5 items, [250, 645, 300, 900, 50]. All items have an offer of 10% off on them. change the array to store final price after applying offer.
+
+let items = [250, 645, 300, 900, 50];
+for (let i = 0; i < items.length; i++) {
+  let offer = items[i] / 10;
+  items[i] -= offer;
+}
+
+console.log(items);
