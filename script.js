@@ -270,27 +270,65 @@
 // Practice Questions
 // For a given array with marks of students, [85, 97, 44, 37, 76, 60].Find the average marks of the entire class.
 
-let marks = [85, 97, 44, 37, 76, 60];
-console.log(marks);
+// let marks = [85, 97, 44, 37, 76, 60];
+// console.log(marks);
 
-let sum = 0;
-for (let val of marks) {
-  sum += val;
-}
-console.log(sum);
+// let sum = 0;
+// for (let val of marks) {
+//   sum += val;
+// }
+// console.log(sum);
 
-let avg = sum / marks.length;
+// let avg = sum / marks.length;
 
-console.log(`the average marks of the class is ${avg}`);
+// console.log(`the average marks of the class is ${avg}`);
 
 // next question
 
 // For  a given array with prices of 5 items, [250, 645, 300, 900, 50]. All items have an offer of 10% off on them. change the array to store final price after applying offer.
 
-let items = [250, 645, 300, 900, 50];
-for (let i = 0; i < items.length; i++) {
-  let offer = items[i] / 10;
-  items[i] -= offer;
-}
+// let items = [250, 645, 300, 900, 50];
+// for (let i = 0; i < items.length; i++) {
+//   let offer = items[i] / 10;
+//   items[i] -= offer;
+// }
 
-console.log(items);
+// console.log(items);
+
+// Functions in JS
+
+// Qs. Create a function using the “function” keyword that takes a String as an argument &
+// // returns the number of vowels in the string.
+// function countVowels(str) {
+//   let count = 0;
+//   for (const char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// Qs. Create an arrow function to perform the same task.
+
+const countVow = (str) => {
+  let count = 0;
+  for (const char of str) {
+    if (
+      char === "a" ||
+      char === "e" ||
+      char === "i" ||
+      char === "o" ||
+      char === "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
+};
